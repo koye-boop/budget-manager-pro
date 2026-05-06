@@ -48,5 +48,5 @@ Application de gestion de budget développée en JavaScript ES6+.
 
 ##  Demo
 
-👉 
+👉 https://budget-manager-koye.netlify.app/
 
