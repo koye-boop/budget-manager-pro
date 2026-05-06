@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <!-- 🔹 Encodage des caractères -->
+  <meta charset="UTF-8">
+
+  <!-- 🔹 Titre de la page -->
+  <title>Budget Manager Pro</title>
+
+  <!-- 🔹 Responsive (important pour mobile) -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 🔹 Lien vers le fichier CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- 🔹 Conteneur principal de l'application -->
+  <div class="container">
+
+    <!-- 🔹 Titre -->
+    <h1>💰 Budget Manager</h1>
+
+    <!-- 🔹 FORMULAIRE D'AJOUT -->
+    <form id="form" class="form">
+
+      <!-- 🔹 Sélection type (revenu ou dépense) -->
+      <select id="type">
+        <option value="income">Revenu</option>
+        <option value="expense">Dépense</option>
+      </select>
+
+      <!-- 🔹 Champ montant -->
+      <input 
+        id="amount" 
+        type="number" 
+        placeholder="Montant" 
+        required
+      >
+
+      <!-- 🔹 Champ catégorie -->
+      <input 
+        id="category" 
+        type="text" 
+        placeholder="Catégorie" 
+        required
+      >
+
+      <!-- 🔹 Bouton d'ajout -->
+      <button type="submit">Ajouter</button>
+
+    </form>
+
+    <!-- 🔹 DASHBOARD (statistiques) -->
+    <div class="dashboard">
+
+      <!-- 🔹 Carte revenus -->
+      <div class="card">
+        <h3>Revenus</h3>
+        <p id="income">0</p>
+      </div>
+
+      <!-- 🔹 Carte dépenses -->
+      <div class="card">
+        <h3>Dépenses</h3>
+        <p id="expenses">0</p>
+      </div>
+
+      <!-- 🔹 Carte solde -->
+      <div class="card">
+        <h3>Solde</h3>
+        <p id="balance">0</p>
+      </div>
+
+    </div>
+
+    <!-- 🔹 CONTENEUR DU GRAPHIQUE -->
+    <div class="chart-container">
+      <canvas id="chart"></canvas>
+    </div>
+
+    <!-- 🔹 TITRE LISTE -->
+    <h2>Transactions</h2>
+
+    <!-- 🔹 LISTE DYNAMIQUE -->
+    <ul id="list"></ul>
+
+  </div>
+
+  <!-- 🔹 Librairie Chart.js pour le graphique -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- 🔹 Script principal (ES6 module) -->
+  <script type="module" src="./js/main.js"></script>
+
+</body>
+</html>

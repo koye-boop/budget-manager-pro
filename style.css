@@ -1,0 +1,109 @@
+/* 🔹 Style global du body */
+body {
+  font-family: 'Segoe UI', sans-serif; /* police moderne */
+  background: #0f172a; /* fond sombre */
+  color: white; /* texte blanc */
+  margin: 0;
+}
+
+
+/* 🔹 Conteneur principal */
+.container {
+  max-width: 700px;       /* largeur max */
+  margin: 40px auto;      /* centré horizontal */
+  background: #1e293b;    /* fond carte */
+  padding: 25px;
+  border-radius: 12px;    /* arrondi */
+}
+
+
+/* 🔹 Titre */
+h1 {
+  text-align: center;
+}
+
+
+/* 🔹 Formulaire */
+.form {
+  display: flex;      /* alignement horizontal */
+  gap: 10px;          /* espace entre éléments */
+  margin-bottom: 20px;
+}
+
+
+/* 🔹 Champs + bouton */
+input, select, button {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+}
+
+
+/* 🔹 Bouton */
+button {
+  background: #22c55e;  /* vert */
+  color: white;
+  cursor: pointer;
+}
+
+
+/* 🔹 Dashboard (cartes) */
+.dashboard {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+
+/* 🔹 Carte individuelle */
+.card {
+  background: #334155;
+  padding: 15px;
+  border-radius: 10px;
+  width: 30%;
+  text-align: center;
+}
+
+
+/* 🔹 CONTENEUR DU GRAPHIQUE */
+.chart-container {
+  width: 250px;        /* taille réduite */
+  margin: 30px auto;   /* centré */
+  background: #334155;
+  padding: 15px;
+  border-radius: 12px;
+}
+
+
+/* 🔹 Canvas responsive */
+canvas {
+  width: 100% !important;
+  height: auto !important;
+}
+
+
+/* 🔹 Liste */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+
+/* 🔹 Élément de liste */
+li {
+  display: flex;
+  justify-content: space-between;
+  background: #475569;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+
+/* 🔹 Bouton suppression */
+li button {
+  background: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
